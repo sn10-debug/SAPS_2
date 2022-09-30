@@ -4,36 +4,33 @@ import { NavLink } from "react-router-dom";
 class NavBar extends React.Component {
   render() {
     return (
-      <div className="tabs">
-        <div className="tab-1 tab-sub">
-          <div>
-            <NavLink activeClassName="active-link" to="/" exact={true}>
-              HOME
-            </NavLink>
-          </div>
-          <div>
-            <NavLink activeClassName="active-link" to="/about" exact={true}>
-              ABOUT US
-            </NavLink>
-          </div>
-        </div>
-        <div className="tab-2 tab-sub">
-          <div>
-            <img src="../images/Logo.png" />
-          </div>
-        </div>
-
-        <div className="tab-3 tab-sub">
-          <div>
-            <NavLink activeClassName="active-link" to="/contact" exact={true}>
-              CONTACT US
-            </NavLink>
-          </div>
-          <div>
-            <NavLink activeClassName="active-link" to="/login" exact={true}>
-              LOGIN/SIGN-IN
-            </NavLink>
-          </div>
+      <div className="container">
+        <div className="container-1">
+          <NavLink activeClassName="active-link" className="text link" to="/">
+            HOME{" "}
+          </NavLink>
+          <NavLink
+            activeClassName="active-link"
+            className="text-1 link"
+            to="/about"
+          >
+            ABOUT US{" "}
+          </NavLink>
+          <img className="image" src={"../images/Logo.png"} />
+          <NavLink
+            activeClassName="active-link "
+            className="text-2 link"
+            to="/contact"
+          >
+            CONTACT US
+          </NavLink>
+          <NavLink
+            activeClassName="active-link"
+            className="text-3 link"
+            to="/login"
+          >
+            LOGIN/SIGN-IN
+          </NavLink>
         </div>
       </div>
     );
