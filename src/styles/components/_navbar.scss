@@ -1,0 +1,15 @@
+.tabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tab-sub{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.active-link{
+    color: red;
+}
