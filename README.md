@@ -86,12 +86,11 @@ Before we go further into detail, let's see a few problems that these people fac
 
 - The percentage of disabled individuals by social group in India during 2011. The percentage of disabled men and women is 2.41 percent and 2.0 percent, respectively. At both the all-India level and the level disaggregated by various social groups, the proportion of disabled women is greater than that of disabled men.
 
-![Stats1](/Images/Readme%20Image/Stats%202.png)
+![Stats1](/Readme%20Image/Stats%202.png)
 
 - The Census 2011 revealed that, in India, 20% of the disabled persons are having disability  in  movement,  19%  are  with  disability  in  seeing,  19  %  are  with  disability  in hearing and 8% has multiple disabilities.
 
-![Stats2](/Images/Readme%20Image/Stats%201.png)
-
+![Stats2](/Readme%20Image/Stats%201.png)
 
 ---
 
