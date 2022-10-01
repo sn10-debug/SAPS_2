@@ -6,6 +6,7 @@ import Contact from "./contact";
 import About from "./About";
 import SignUpForm from "./SignUpForm";
 import LoginForm from "./LoginForm";
+import Info from "./Info";
 
 class Dashboard extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class Dashboard extends React.Component {
             <Route path="/about" component={About}></Route>
             <Route path="/signUp" component={SignUpForm}></Route>
             <Route path="/logIn" component={LoginForm}></Route>
+            <Route path="/info" component={Info}></Route>
           </Switch>
         </div>
       </BrowserRouter>

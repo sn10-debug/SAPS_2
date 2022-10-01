@@ -22,6 +22,7 @@ class SignUpForm extends React.Component {
     let age = e.target.elements.age.value;
     let gender = e.target.elements.gender.value;
     let requirements = e.target.elements.requirements.value;
+    let emer_nums = e.target.elements.emergency_numbers.value;
 
     if (!name) {
       this.setState({ error: "Make sure you enter the name" });
@@ -69,6 +70,10 @@ class SignUpForm extends React.Component {
       return;
     }
 
+    if (!emer_nums) {
+      this.setState({ error: "Make sure you enter the emergency numbers" });
+    }
+
     if (this.state.error) this.setState({ error: undefined });
   }
   render() {
@@ -77,80 +82,31 @@ class SignUpForm extends React.Component {
         {this.state.formStatus === "submission" ? (
           <div>
             <form onSubmit={this.onFormSubmit}>
-              <table>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p>Name : </p>
-                    </td>
+              <div className="signUp-container">
+                <div className="signUp-container-1">
+                  <div className="signUp-container-2">
+                    <span className="signUp-text">SIGN UP</span>
+                    <span className="signUp-text-1">NAME</span>
+                    <input type="text" name="name" />
+                    <span className="signUp-text-2">EMAIL</span>
+                    <input type="email" name="email" />
+                    <span className="signUp-text-3">PASSWORD</span>
+                    <input type="password" name="password" />
+                    <span className="signUp-text-4">AGE</span>
+                    <input type="number" name="age" />
+                    <span className="signUp-text-5">GENDER</span>
+                    <input type="text" name="gender" />
+                    <span className="signUp-text-6">REQUIREMENT</span>
+                    <textarea type="text" name="requirement" />
+                    <span className="signUp-text-7">EMERGENCY NUMBER</span>
+                    <textarea type="number" name="emergency_numbers" />
 
-                    <td>
-                      <input type="text" name="name" />
-                    </td>
-                  </tr>
+                    <span className="signUp-text-8">Forgot Password?</span>
+                    <span className="signUp-text-9">PICK YOUR MODE</span>
+                  </div>
+                </div>
+              </div>
 
-                  <tr>
-                    <td>
-                      <p>email : </p>
-                    </td>
-
-                    <td>
-                      <input type="email" name="email-id" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Password : </p>
-                    </td>
-
-                    <td>
-                      <input type="password" name="password" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Confirm Password : </p>
-                    </td>
-
-                    <td>
-                      <input type="text" name="confirm-password" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Age : </p>
-                    </td>
-
-                    <td>
-                      <input type="number" name="age"></input>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Gender : </p>
-                    </td>
-
-                    <td>
-                      <input type="text" name="gender"></input>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Requirements : </p>
-                    </td>
-
-                    <td>
-                      <textarea name="requirements"></textarea>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>
-                      <button> Sign In</button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
               {this.state.error ? <p>{this.state.error}</p> : ""}
             </form>
 

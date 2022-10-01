@@ -16,7 +16,7 @@ class NavBar extends React.Component {
           >
             ABOUT US{" "}
           </NavLink>
-          <img className="image" src={"../images/Logo.png"} />
+          <img className="image" src={"./images/Logo.png"} />
           <NavLink
             activeClassName="active-link "
             className="text-2 link"

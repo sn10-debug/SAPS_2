@@ -19,6 +19,10 @@ module.exports = {
 
         test: /\.s?css$/,
       },
+      {
+        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        loader: "url-loader",
+      },
     ],
   },
   devtool: "eval-cheap-module-source-map",
